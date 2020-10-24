@@ -1,0 +1,41 @@
+{
+    "name": "cursehosting/mobile-addon",
+    "description": "Addon package for CurseHosting, which enables support for the mobile app.",
+    "keywords": [
+        "cursehosting"
+    ],
+    "homepage": "https://github.com/CurseHosting/mobile-addon",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Arnaud Lier",
+            "email": "arnaud@cursehosting.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "fruitcake/laravel-cors": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\MobileAddon\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.4-dev"
+        },
+        "laravel": {
+            "providers": [
+                "App\\MobileAddon\\MobileAddonServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
